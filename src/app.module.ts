@@ -3,12 +3,9 @@ import { DiscordModule } from '@discord-nestjs/core';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { BotModule } from './bot/bot.module';
 import { GatewayIntentBits, Partials } from 'discord.js';
-import { UsersModule } from './users/users.module';
 import { PassportModule } from '@nestjs/passport';
-import { AppController } from './app.controller';
 import { HttpModule } from '@nestjs/axios';
 import { SERVER_ID } from './constants';
-import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -49,11 +46,9 @@ import { AuthModule } from './auth/auth.module';
       }),
     }),
     BotModule,
-    AuthModule,
-    UsersModule,
     PassportModule,
     HttpModule,
   ],
-  controllers: [AppController],
+  controllers: [],
 })
 export class AppModule {}

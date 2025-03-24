@@ -39,8 +39,6 @@
     "express-session": "^1.18.1",
     "jest-mock": "^29.7.0",
     "passport": "^0.7.0",
-    "passport-auth0": "^1.4.4",
-    "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "service": "^0.1.4"
@@ -57,8 +55,6 @@
     "@types/express-session": "^1.18.1",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
-    "@types/passport-auth0": "^1.0.9",
-    "@types/passport-jwt": "^4.0.1",
     "@types/supertest": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
@@ -92,5 +88,6 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af"
 }
