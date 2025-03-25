@@ -7,6 +7,7 @@ dist
 .gitignore
 .idea
 .github
+.devcontainers
 
 # Logs
 *.log
@@ -22,6 +23,7 @@ dist
 # Editor directories and files
 .vscode/
 *.code-workspace
+
 
 # OS-specific files
 .DS_Store

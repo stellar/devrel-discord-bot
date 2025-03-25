@@ -8,7 +8,7 @@ RUN corepack enable
 FROM base AS dependencies
 WORKDIR /usr/src/app
 COPY --chown=node:node package*.json ./
-RUN pnpm install --frozen-lockfile
+RUN pnpm install #--frozen-lockfile set by default in ci env
 
 # Build stage
 FROM dependencies AS build
@@ -19,7 +19,7 @@ RUN pnpm run build
 FROM base AS production
 WORKDIR /usr/src/app
 COPY --from=build /usr/src/app ./
-ENV NODE_ENV production
+ENV NODE_ENV=production
 USER node
 EXPOSE 3000
 CMD [ "node", "dist/main.js" ]

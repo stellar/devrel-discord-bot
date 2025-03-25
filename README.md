@@ -88,14 +88,14 @@ cloudflared tunnel --url http://localhost:3000
 Build image locally
 
 ```
-docker build --platform linux/amd64 -t stellar-discord-bot .
+docker build --platform linux/amd64 -t devrel-discord-bot .
 ```
 
 Push to DockerHub
 
 ``` 
-docker tag stellar-discord-bot:latest chrisstellar/stellar-discord-bot:latest
-docker push chrisstellar/stellar-discord-bot:latest
+docker tag devrel-discord-bot:latest chrisstellar/devrel-discord-bot:latest
+docker push chrisstellar/devrel-discord-bot:latest
 ```
 
 ## License
