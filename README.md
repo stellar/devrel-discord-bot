@@ -71,17 +71,10 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
-## Run Locally with Discord
+## Health check
 
-Using ngrok
+http://localhost:3000/health
 
-```
-ngrok http 3000
-```
-
-```
-cloudflared tunnel --url http://localhost:3000
-```
 
 ## Docker
 

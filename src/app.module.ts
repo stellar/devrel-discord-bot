@@ -6,6 +6,7 @@ import { GatewayIntentBits, Partials } from 'discord.js';
 import { PassportModule } from '@nestjs/passport';
 import { HttpModule } from '@nestjs/axios';
 import { SERVER_ID } from './constants';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
@@ -48,6 +49,7 @@ import { SERVER_ID } from './constants';
     BotModule,
     PassportModule,
     HttpModule,
+    HealthModule,
   ],
   controllers: [],
 })
